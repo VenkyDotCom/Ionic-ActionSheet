@@ -3,13 +3,54 @@ import { ViewController } from "ionic-angular";
 
 
 @Component({
-  template:`<ion-list>
-    <ion-list-header>Ionic</ion-list-header>
-    <button ion-item (click)="close()">Basketball</button>
-    <button ion-item (click)="close()">Cricket</button>
-    <button ion-item (click)="close()">Rugby</button>
-    <button ion-item (click)="close()">Vollyball</button>
-    </ion-list>`
+  template:`
+  <form (ngSubmit)="addressForm()" title="Enter Address">
+  <ion-item>
+  <ion-label>Basketball</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Cricket</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Rugby</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Vollyball</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Tennis</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Carroms</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Badminton</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Kabaddi</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+
+<div padding  style="text-align: center; text-color: red">          
+<button primary block  (click)="s_address()" >Submit</button>
+</div>
+  </form>
+ 
+  `
 })
 export class student_games {
 
